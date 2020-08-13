@@ -25,7 +25,7 @@ class BigInt
         {
             if (this != &other)
                 Num = std::move(other.Num);
-        }   // Copy constructor
+        }   // Move constructor
 
         inline const BigInt &operator=(const BigInt& op2) noexcept { Num = op2.Num; return *this; }   // operator =
         inline const std::string &GetNum() const noexcept { return Num; }    // GetNnum
